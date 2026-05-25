@@ -47,6 +47,3 @@ print("Feature Importances:\n", importances.sort_values(ascending=False))
 rf_cv_score = cross_val_score(rf, X, y, cv=5)
 print(f"Random Forest Cross-Validation Accuracy: {rf_cv_score.mean():.3f}")
 
-# For Jupyter Notebook: display the tree image
-# from IPython.display import Image
-# Image(filename='decision_tree_heart.png')
